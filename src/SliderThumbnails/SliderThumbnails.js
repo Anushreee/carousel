@@ -33,7 +33,7 @@ export default class SliderThumbnails extends Component {
     };
     return (
       <div className="slider-wrapper">
-
+        <div className="slider-main">
         <Slick
           asNavFor={this.state.nav2}
           ref={slider => (this.slider1 = slider)}
@@ -42,14 +42,15 @@ export default class SliderThumbnails extends Component {
         >
           {this.props.children}
         </Slick>
+        </div>
         <div className="thumbnail-slider-wrap">
           <Slick
             asNavFor={this.state.nav1}
             ref={slider => (this.slider2 = slider)}
             {...this.settings}
             centerPadding="10px"
-            // variableWidth
-            // infinite={false}
+           variableWidth
+            //infinite={false}
             // adaptiveHeight
             slidesToShow={this.props.children.length >= 6 ? 6 : this.props.children.length}
             swipeToSlide={true}
