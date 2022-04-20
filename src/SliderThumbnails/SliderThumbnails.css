@@ -1,0 +1,19 @@
+body {
+  background: green;
+}
+
+.slider-wrapper {
+  max-width: 360px;
+  margin: 0px auto;
+}
+
+.thumbnail-slider-wrap {
+  margin-top: 20px;
+  height: 85px;
+}
+
+.thumbnail-slider-wrap img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}

@@ -1,0 +1,29 @@
+.slider {
+  position: relative;
+}
+
+.slider div {
+  width: 500px;
+  margin: 0px auto;
+}
+
+.slider img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.slider .slick-prev {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  color: red;
+  background: red;
+}
+
+.slider .slick-next {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  color: red;
+  background: red;
+}
